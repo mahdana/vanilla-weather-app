@@ -51,6 +51,8 @@ function handlesubmit(event) {
     event.preventDefault();
     let cityInputElement = document.querySelector("#city-input");
     search(cityInputElement.value)
+    celciusLink.classList.add("active");
+    fahrenheitLink.classList.remove("active");
 }
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handlesubmit);
